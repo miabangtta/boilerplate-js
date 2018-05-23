@@ -1,0 +1,12 @@
+<html>
+<head>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+<div>This image is loaded from .html</div>
+<img src="./images/dogs.jpg" width="300" alt="dogs">
+<div>And this is loaded from .styl (.css) :</div>
+<div class="boo"></div>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
